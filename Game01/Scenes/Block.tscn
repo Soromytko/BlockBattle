@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmfln0p0phua3"]
+
+[ext_resource type="Texture2D" uid="uid://d0kf8uu1bgjfm" path="res://Textures/pngwing.com.png" id="1_e0sw8"]
+[ext_resource type="Script" path="res://Scripts/Block.gd" id="1_g8x31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bh46p"]
+size = Vector2(32, 93)
+
+[node name="Block" type="CharacterBody2D"]
+script = ExtResource("1_g8x31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bh46p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.57079
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_e0sw8")

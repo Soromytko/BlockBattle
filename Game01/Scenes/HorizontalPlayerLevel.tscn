@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckydnnxl477p1"]
+
+[ext_resource type="Texture2D" uid="uid://bw74owbg3wodf" path="res://Textures/wood-board-texture-background-free-vector.jpg" id="1_0hayx"]
+
+[node name="VerticalScene" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_0hayx")
+
+[node name="Camera2D" type="Camera2D" parent="."]

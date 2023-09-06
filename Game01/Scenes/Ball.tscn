@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbrchcochogyy"]
+
+[ext_resource type="Script" path="res://Scripts/Ball.gd" id="1_8bjqu"]
+[ext_resource type="Texture2D" uid="uid://ddge2v7710o1h" path="res://Textures/27355-3-swimming-pool-ball-photos.png" id="2_uj1pl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pu12y"]
+radius = 15.0
+
+[node name="Ball" type="CharacterBody2D"]
+position = Vector2(-209, 3)
+collision_layer = 4
+collision_mask = 5
+script = ExtResource("1_8bjqu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0297893, 0.0297893)
+texture = ExtResource("2_uj1pl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pu12y")

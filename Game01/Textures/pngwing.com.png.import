@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddge2v7710o1h"
-path="res://.godot/imported/27355-3-swimming-pool-ball-photos.png-d3330a7536231e166a1c05f15b031b76.ctex"
+uid="uid://d0kf8uu1bgjfm"
+path="res://.godot/imported/pngwing.com.png-194d50dca99461e40481e2503c3cbb69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://27355-3-swimming-pool-ball-photos.png"
-dest_files=["res://.godot/imported/27355-3-swimming-pool-ball-photos.png-d3330a7536231e166a1c05f15b031b76.ctex"]
+source_file="res://Textures/pngwing.com.png"
+dest_files=["res://.godot/imported/pngwing.com.png-194d50dca99461e40481e2503c3cbb69.ctex"]
 
 [params]
 
