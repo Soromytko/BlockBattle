@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://cvxpy3msnity3"]
+
+[ext_resource type="PackedScene" uid="uid://cbx6e0hd2sf5u" path="res://Scenes/Player.tscn" id="1_fff4s"]
+[ext_resource type="Texture2D" uid="uid://b5ap4sbskv2xy" path="res://icon.svg" id="2_y0uci"]
+[ext_resource type="Script" path="res://Scripts/Ball.gd" id="3_3atlr"]
+[ext_resource type="Texture2D" uid="uid://ddge2v7710o1h" path="res://27355-3-swimming-pool-ball-photos.png" id="4_dejwx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m823n"]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5tbps"]
+size = Vector2(20, 655)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e8h8x"]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vd11q"]
+size = Vector2(1166, 20)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bsuoo"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pu12y"]
+radius = 25.2982
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." node_paths=PackedStringArray("ball") instance=ExtResource("1_fff4s")]
+position = Vector2(-556, 0)
+ball = NodePath("../Ball")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+scale = Vector2(0.16, 0.76)
+texture = ExtResource("2_y0uci")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Borders" type="Node2D" parent="."]
+
+[node name="Left" type="StaticBody2D" parent="Borders"]
+position = Vector2(-575, 0)
+physics_material_override = SubResource("PhysicsMaterial_m823n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/Left"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_5tbps")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Right" type="StaticBody2D" parent="Borders"]
+position = Vector2(571, 0)
+physics_material_override = SubResource("PhysicsMaterial_e8h8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/Right"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_5tbps")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Down" type="StaticBody2D" parent="Borders"]
+position = Vector2(0, 319)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/Down"]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_vd11q")
+
+[node name="Up" type="StaticBody2D" parent="Borders"]
+position = Vector2(0, -333)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/Up"]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_vd11q")
+
+[node name="Ball" type="RigidBody2D" parent="."]
+mass = 0.01
+physics_material_override = SubResource("PhysicsMaterial_bsuoo")
+gravity_scale = 0.0
+can_sleep = false
+freeze_mode = 1
+script = ExtResource("3_3atlr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+shape = SubResource("CircleShape2D_pu12y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ball"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("4_dejwx")
