@@ -4,7 +4,6 @@
 [ext_resource type="Script" path="res://Scripts/Block.gd" id="1_g8x31"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bh46p"]
-size = Vector2(32, 93)
 
 [node name="Block" type="CharacterBody2D"]
 script = ExtResource("1_g8x31")
@@ -13,6 +12,5 @@ script = ExtResource("1_g8x31")
 shape = SubResource("RectangleShape2D_bh46p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-rotation = 1.57079
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.044, 0.142)
 texture = ExtResource("1_e0sw8")

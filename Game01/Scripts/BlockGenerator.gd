@@ -6,7 +6,7 @@ class_name BlockGenerator extends Node3D
 
 func _ready():
 	var blocks = {}
-	for i in 100:
+	for i in 300:
 		var x : float = randi_range(-block_field_size.x, block_field_size.x)
 		var y : float = randi_range(-block_field_size.y, block_field_size.y)
 		x *= block_size.x

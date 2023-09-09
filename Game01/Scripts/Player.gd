@@ -1,8 +1,6 @@
 extends CharacterBody2D
 
 @export var speed : float = 600.0
-@export var down_action_name : String
-@export var up_action_name : String
 
 
 func _ready():
@@ -12,8 +10,8 @@ func _ready():
 	
 
 func _physics_process(delta):
-	var direction = Input.get_axis(down_action_name, up_action_name)
-	velocity.y = -direction * speed
+	var direction = Input.get_axis("right", "left")
+	velocity.x = -direction * speed
 	move_and_slide()
 	
 

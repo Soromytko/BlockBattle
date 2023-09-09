@@ -17,24 +17,14 @@ size = Vector2(1166, 20)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="PlayerL" parent="." instance=ExtResource("1_fff4s")]
-position = Vector2(-556, 0)
+[node name="Player" parent="." instance=ExtResource("1_fff4s")]
+position = Vector2(0, 258)
 collision_layer = 1
 collision_mask = 7
-down_action_name = "down_player_l"
-up_action_name = "up_player_l"
 
-[node name="Sprite2D" type="Sprite2D" parent="PlayerL"]
-scale = Vector2(0.16, 0.76)
-texture = ExtResource("2_y0uci")
-
-[node name="PlayerR" parent="." instance=ExtResource("1_fff4s")]
-position = Vector2(543, 0)
-down_action_name = "down_player_r"
-up_action_name = "up_player_r"
-
-[node name="Sprite2D" type="Sprite2D" parent="PlayerR"]
-scale = Vector2(0.16, 0.76)
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(1, -0.500013)
+scale = Vector2(1.03125, 0.210937)
 texture = ExtResource("2_y0uci")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -76,6 +66,6 @@ shape = SubResource("RectangleShape2D_vd11q")
 
 [node name="BlockGenerator" type="Node3D" parent="."]
 script = ExtResource("5_erpeo")
-block_field_size = Vector2i(5, 2)
-block_size = Vector2(40, 100)
+block_field_size = Vector2i(20, 5)
+block_size = Vector2(25, 25)
 block_scene = ExtResource("5_xdefx")
