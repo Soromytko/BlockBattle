@@ -1,0 +1,6 @@
+Add several types of blocks
+Add sound effects
+Add a shooting system
+Add player management
+Add a boss
+Add multiple levels
