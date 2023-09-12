@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cvxpy3msnity3"]
+[gd_scene load_steps=10 format=3 uid="uid://cvxpy3msnity3"]
 
 [ext_resource type="PackedScene" uid="uid://cbx6e0hd2sf5u" path="res://Scenes/Player.tscn" id="1_fff4s"]
 [ext_resource type="Texture2D" uid="uid://b5ap4sbskv2xy" path="res://icon.svg" id="2_y0uci"]
 [ext_resource type="PackedScene" uid="uid://cbrchcochogyy" path="res://Scenes/Ball.tscn" id="3_rv8db"]
 [ext_resource type="Script" path="res://Scripts/BlockGenerator.gd" id="5_erpeo"]
 [ext_resource type="PackedScene" uid="uid://cmfln0p0phua3" path="res://Scenes/Block.tscn" id="5_xdefx"]
+[ext_resource type="PackedScene" uid="uid://cwprnav4umq8c" path="res://Scenes/BossPrototype01.tscn" id="6_h67hx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5tbps"]
 size = Vector2(20, 655)
@@ -65,7 +66,10 @@ shape = SubResource("RectangleShape2D_vd11q")
 [node name="Ball" parent="." instance=ExtResource("3_rv8db")]
 
 [node name="BlockGenerator" type="Node3D" parent="."]
+visible = false
 script = ExtResource("5_erpeo")
 block_field_size = Vector2i(20, 5)
 block_size = Vector2(25, 25)
 block_scene = ExtResource("5_xdefx")
+
+[node name="BossPrototype01" parent="." instance=ExtResource("6_h67hx")]
