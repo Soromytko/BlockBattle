@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvdx1oywiagso"]
+
+[ext_resource type="Texture2D" uid="uid://d0kf8uu1bgjfm" path="res://Textures/pngwing.com.png" id="1_iswm1"]
+[ext_resource type="Script" path="res://PhysicsTest/PhysicsTest.gd" id="2_3uek0"]
+[ext_resource type="PackedScene" uid="uid://dq8542bqn0a4p" path="res://PhysicsTest/PhysicsTestBlock.tscn" id="3_cyet8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xeba"]
+size = Vector2(1152, 20)
+
+[node name="PhysicsTest" type="Node2D"]
+
+[node name="DownWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DownWall"]
+position = Vector2(0, 312)
+shape = SubResource("RectangleShape2D_3xeba")
+
+[node name="Sprite2D" type="Sprite2D" parent="DownWall"]
+position = Vector2(7.99999, 328)
+scale = Vector2(2.4, 0.324)
+texture = ExtResource("1_iswm1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-264, -64)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(0, 312)
+shape = SubResource("RectangleShape2D_3xeba")
+
+[node name="Sprite2D" type="Sprite2D" parent="LeftWall"]
+position = Vector2(7.99999, 328)
+scale = Vector2(2.4, 0.324)
+texture = ExtResource("1_iswm1")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(912, -64)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(0, 312)
+shape = SubResource("RectangleShape2D_3xeba")
+
+[node name="Sprite2D" type="Sprite2D" parent="RightWall"]
+position = Vector2(7.99999, 328)
+scale = Vector2(2.4, 0.324)
+texture = ExtResource("1_iswm1")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, -456)
+script = ExtResource("2_3uek0")
+box_scene = ExtResource("3_cyet8")
