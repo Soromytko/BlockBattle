@@ -18,9 +18,20 @@ var _units = {}
 
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
-		_save_to_file()
+		var units_data = {}
+		for pos in _units: units_data[pos] = MosaicFileManager.MosaicUnitData.new(_units[pos].color)
+		MosaicFileManager.save_to_file(units_data)
 	elif Input.is_key_pressed(KEY_L):
-		_load_from_file()
+		var new_units_data = MosaicFileManager.load_from_file()
+		if new_units_data.size() > 0:
+			var asdf: Node2D
+			for pos in _units: _units[pos].queue_free()
+			_units.clear()
+			for pos in new_units_data:
+				var unit : Polygon2D = hexagon_scene.instantiate()
+				add_child(unit)
+				unit.global_position = pos
+				unit.color = new_units_data[pos].color
 
 
 func _ready():
@@ -65,32 +76,3 @@ func _to_hex_pos(pos : Vector2):
 			nearest_point = point
 	return nearest_point
 
-
-func _save_to_file(path : String = "res://mosaic_editor_scene.mes"):
-	var file = FileAccess.open(path, FileAccess.WRITE)
-	if file.is_open():
-		for key in _units:
-			var value : Polygon2D = _units[key]
-			file.store_float(key.x)
-			file.store_float(key.y)
-			file.store_float(value.color.r)
-			file.store_float(value.color.g)
-			file.store_float(value.color.b)
-		file.close()
-
-
-func _load_from_file(path : String = "res://mosaic_editor_scene.mes"):
-	var file = FileAccess.open(path, FileAccess.READ)
-	if file.is_open():
-		for key in _units: _units[key].queue_free()
-		_units.clear()
-		while file.get_position() < file.get_length():
-			var pos : Vector2 = Vector2(file.get_float(), file.get_float())
-			var color : Color = Color(file.get_float(), file.get_float(), file.get_float(), 1)
-			var hexagon : Polygon2D = hexagon_scene.instantiate()
-			add_child(hexagon)
-			hexagon.global_position = pos
-			hexagon.color = color
-			_units[pos] = hexagon
-		file.close()
-		
