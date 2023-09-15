@@ -18,20 +18,9 @@ var _units = {}
 
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
-		var units_data = {}
-		for pos in _units: units_data[pos] = MosaicFileManager.MosaicUnitData.new(_units[pos].color)
-		MosaicFileManager.save_to_file(units_data)
+		_save()
 	elif Input.is_key_pressed(KEY_L):
-		var new_units_data = MosaicFileManager.load_from_file()
-		if new_units_data.size() > 0:
-			var asdf: Node2D
-			for pos in _units: _units[pos].queue_free()
-			_units.clear()
-			for pos in new_units_data:
-				var unit : Polygon2D = hexagon_scene.instantiate()
-				add_child(unit)
-				unit.global_position = pos
-				unit.color = new_units_data[pos].color
+		_load()
 
 
 func _ready():
@@ -75,4 +64,27 @@ func _to_hex_pos(pos : Vector2):
 			dist = cur_dist
 			nearest_point = point
 	return nearest_point
+	
+
+func _save():
+	var mosaic_units : Array[MosaicFileManager.MosaicUnit] = []
+	for pos in _units:
+		var color : Color = _units[pos].color
+		mosaic_units.append(MosaicFileManager.MosaicUnit.new(pos, color))
+	MosaicFileManager.save_to_file(mosaic_units)
+		
+	
+func _load():
+	var mosaic_units = MosaicFileManager.load_from_file()
+	if mosaic_units.size() > 0:
+		for pos in _units: _units[pos].queue_free()
+		_units.clear()
+		for mosaic_unit in mosaic_units:
+			var pos : Vector2 = mosaic_unit.position
+			var color : Color = mosaic_unit.color
+			var unit : Polygon2D = hexagon_scene.instantiate()
+			add_child(unit)
+			unit.global_position = pos
+			unit.color = color
+			_units[pos] = unit
 
