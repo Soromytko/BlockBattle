@@ -12,7 +12,7 @@ class MosaicUnit:
 
 static func save_to_file(units : Array[MosaicUnit], path : String = "res://mosaic_editor_scene.mes"):
 	var file = FileAccess.open(path, FileAccess.WRITE)
-	if file.is_open():
+	if file:
 		for unit in units:
 			var pos = unit.position
 			var color = unit.color
@@ -27,7 +27,7 @@ static func save_to_file(units : Array[MosaicUnit], path : String = "res://mosai
 static func load_from_file(path : String = "res://mosaic_editor_scene.mes"):
 	var units : Array[MosaicUnit]
 	var file = FileAccess.open(path, FileAccess.READ)
-	if file.is_open():
+	if file:
 		while file.get_position() < file.get_length():
 			var pos : Vector2 = Vector2(file.get_float(), file.get_float())
 			var color : Color = Color(file.get_float(), file.get_float(), file.get_float(), 1)
