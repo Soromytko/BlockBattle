@@ -4,7 +4,7 @@ var direction : Vector2:
 	get: return velocity
 	set(value): velocity = value
 	
-var speed : float = 5:
+var speed : float = 10:
 	get: return speed
 	set(value): speed = value
 	

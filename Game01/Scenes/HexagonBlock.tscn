@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://rssadir0xode"]
+[gd_scene load_steps=3 format=3 uid="uid://rssadir0xode"]
 
 [ext_resource type="Script" path="res://Scripts/Block.gd" id="1_fx6hf"]
+[ext_resource type="PackedScene" uid="uid://crujqkw0b0114" path="res://Scenes/BlockDestruction_particles.tscn" id="2_bqlcr"]
 
 [node name="HexagonBlock" type="StaticBody2D"]
 script = ExtResource("1_fx6hf")
+particles_scene = ExtResource("2_bqlcr")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(0, -10, -8.66, -5, -8.66, 5, 0, 10, 8.66, 5, 8.66, -5)

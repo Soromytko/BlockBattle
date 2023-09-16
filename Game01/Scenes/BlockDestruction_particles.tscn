@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://crujqkw0b0114"]
+
+[ext_resource type="Texture2D" uid="uid://b5ap4sbskv2xy" path="res://icon.svg" id="1_kyuhc"]
+
+[sub_resource type="Gradient" id="Gradient_8up6f"]
+offsets = PackedFloat32Array(0, 0.552716, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="BlockDestruction_particles" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 5
+lifetime = 3.0
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource("1_kyuhc")
+direction = Vector2(0, -1)
+initial_velocity_min = 166.67
+initial_velocity_max = 992.9
+angular_velocity_min = -226.4
+angular_velocity_max = 389.6
+scale_amount_min = 0.1
+scale_amount_max = 0.1
+color_ramp = SubResource("Gradient_8up6f")
