@@ -15,12 +15,26 @@ var _debug_unit : Node2D
 var _brash_unit
 var _units = {}
 
+var _brush_color : Color
+
 
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
 		_save()
 	elif Input.is_key_pressed(KEY_L):
 		_load()
+	elif Input.is_key_pressed(KEY_R):
+		_brush_color = Color.RED
+	elif Input.is_key_pressed(KEY_G):
+		_brush_color = Color.GREEN
+	elif Input.is_key_pressed(KEY_B):
+		_brush_color = Color.BLUE
+	elif Input.is_key_pressed(KEY_Y):
+		_brush_color = Color.YELLOW
+	elif Input.is_key_pressed(KEY_P):
+		_brush_color = Color.PINK
+	elif Input.is_key_pressed(KEY_O):
+		_brush_color = Color.ORANGE
 
 
 func _ready():
@@ -36,7 +50,8 @@ func _physics_process(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if !_units.has(hex_pos):
 			var hexagon : Polygon2D = hexagon_scene.instantiate()
-			hexagon.color = Color(randf_range(0, 1), randf_range(0, 1), randf_range(0, 1), 1)
+#			hexagon.color = Color(randf_range(0, 1), randf_range(0, 1), randf_range(0, 1), 1)
+			hexagon.color = _brush_color
 			add_child(hexagon)
 			hexagon.global_position = hex_pos
 			_units[hex_pos] = hexagon
