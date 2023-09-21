@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpq1iml65gt62"]
 
 [ext_resource type="Script" path="res://MosaicEditor/MosaicEditor.gd" id="1_ax81m"]
-[ext_resource type="PackedScene" uid="uid://dqjo58xsbbb6e" path="res://MosaicEditor/Hexagon.tscn" id="2_eboc1"]
+[ext_resource type="PackedScene" uid="uid://bwrcjp10ierm8" path="res://MosaicEditor/Bubble.tscn" id="2_qspnn"]
 
 [node name="MosaicEditor" type="Node2D"]
 script = ExtResource("1_ax81m")
-hexagon_scene = ExtResource("2_eboc1")
+hexagon_scene = ExtResource("2_qspnn")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
