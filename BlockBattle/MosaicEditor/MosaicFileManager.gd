@@ -1,18 +1,21 @@
 class_name MosaicFileManager
 
 class MosaicUnit:
-	var position : Vector2:
-		get: return position
-	var color : Color:
-		get: return color
+	var position : Vector2 setget set_position, get_position
+	func set_position(value : Vector2): position = value
+	func get_position(): return position
+	var color : Color setget set_color, get_color
+	func set_color(value : Color): color = value
+	func get_color(): return color
 	func _init(position : Vector2, color : Color):
 		self.position = position
 		self.color = color
 		
 
-static func save_to_file(units : Array[MosaicUnit], path : String = "res://mosaic_editor_scene.mes"):
-	var file = FileAccess.open(path, FileAccess.WRITE)
-	if file:
+static func save_to_file(units, path : String = "res://mosaic_editor_scene.mes"):
+	var file : File = File.new()
+	file.open(path, File.WRITE)
+	if file.is_open():
 		for unit in units:
 			var pos = unit.position
 			var color = unit.color
@@ -25,10 +28,11 @@ static func save_to_file(units : Array[MosaicUnit], path : String = "res://mosai
 
 
 static func load_from_file(path : String = "res://mosaic_editor_scene.mes"):
-	var units : Array[MosaicUnit]
-	var file = FileAccess.open(path, FileAccess.READ)
-	if file:
-		while file.get_position() < file.get_length():
+	var units = []
+	var file = File.new()
+	file.open(path, File.READ)
+	if file.is_open():
+		while not file.eof_reached():
 			var pos : Vector2 = Vector2(file.get_float(), file.get_float())
 			var color : Color = Color(file.get_float(), file.get_float(), file.get_float(), 1)
 			var unit : MosaicUnit = MosaicUnit.new(pos, color)

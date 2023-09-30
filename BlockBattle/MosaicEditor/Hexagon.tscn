@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dqjo58xsbbb6e"]
+[gd_scene format=2]
 
 [node name="Hexagon" type="Polygon2D"]
-polygon = PackedVector2Array(0, -10, -8.66, -5, -8.66, 5, 0, 10, 8.66, 5, 8.66, -5)
+polygon = PoolVector2Array( 0, -10, -8.66, -5, -8.66, 5, 0, 10, 8.66, 5, 8.66, -5 )

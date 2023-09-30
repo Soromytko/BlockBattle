@@ -1,15 +1,8 @@
 extends Node2D
 
-@export var units : Array[PackedScene]
+export(float) var radius : float = 10
 
-@export var radius : float = 10
-
-@export var hexagon_scene : PackedScene
-@export var red : PackedScene
-@export var green : PackedScene
-@export var blue : PackedScene
-@export var yellow : PackedScene
-@export var pink : PackedScene
+export(PackedScene) var hexagon_scene : PackedScene
 
 var _debug_unit : Node2D
 var _brash_unit
@@ -24,21 +17,21 @@ func _input(event):
 	elif Input.is_key_pressed(KEY_L):
 		_load()
 	elif Input.is_key_pressed(KEY_R):
-		_brush_color = Color.RED
+		_brush_color = Color.red
 	elif Input.is_key_pressed(KEY_G):
-		_brush_color = Color.GREEN
+		_brush_color = Color.green
 	elif Input.is_key_pressed(KEY_B):
-		_brush_color = Color.BLUE
+		_brush_color = Color.blue
 	elif Input.is_key_pressed(KEY_Y):
-		_brush_color = Color.YELLOW
+		_brush_color = Color.yellow
 	elif Input.is_key_pressed(KEY_P):
-		_brush_color = Color.PINK
+		_brush_color = Color.pink
 	elif Input.is_key_pressed(KEY_O):
-		_brush_color = Color.ORANGE
+		_brush_color = Color.orange
 
 
 func _ready():
-	_debug_unit = hexagon_scene.instantiate()
+	_debug_unit = hexagon_scene.instance()
 	add_child(_debug_unit)
 
 
@@ -47,9 +40,9 @@ func _physics_process(delta):
 	mouse_pos = get_global_mouse_position()
 	var hex_pos = _to_hex_pos(mouse_pos)
 	_debug_unit.global_position = hex_pos
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		if !_units.has(hex_pos):
-			var hexagon : Polygon2D = hexagon_scene.instantiate()
+			var hexagon : Polygon2D = hexagon_scene.instance()
 #			hexagon.color = Color(randf_range(0, 1), randf_range(0, 1), randf_range(0, 1), 1)
 			hexagon.color = _brush_color
 			add_child(hexagon)
@@ -82,7 +75,7 @@ func _to_hex_pos(pos : Vector2):
 	
 
 func _save():
-	var mosaic_units : Array[MosaicFileManager.MosaicUnit] = []
+	var mosaic_units = []
 	for pos in _units:
 		var color : Color = _units[pos].color
 		mosaic_units.append(MosaicFileManager.MosaicUnit.new(pos, color))
@@ -97,9 +90,8 @@ func _load():
 		for mosaic_unit in mosaic_units:
 			var pos : Vector2 = mosaic_unit.position
 			var color : Color = mosaic_unit.color
-			var unit : Polygon2D = hexagon_scene.instantiate()
+			var unit : Polygon2D = hexagon_scene.instance()
 			add_child(unit)
 			unit.global_position = pos
 			unit.color = color
 			_units[pos] = unit
-
