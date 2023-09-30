@@ -1,1 +1,2 @@
-# Yandex-game01-gd
+# Block Battle
+Block Battle is a casual game

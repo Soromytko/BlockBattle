@@ -4,7 +4,7 @@ var direction : Vector2:
 	get: return velocity
 	set(value): velocity = value
 	
-var speed : float = 10:
+var speed : float = 20:
 	get: return speed
 	set(value): speed = value
 	
@@ -20,7 +20,11 @@ func _process(delta):
 
 
 func _physics_process(delta):
+	var mouse_pos = get_global_mouse_position()
+#	direction = (mouse_pos - global_position).normalized()
+#	print(mouse_pos - global_position)
 	var kinematic_collision = move_and_collide(velocity * speed)
+	
 	if kinematic_collision:
 		velocity = velocity.bounce(kinematic_collision.get_normal())
 		var collider = kinematic_collision.get_collider()
