@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://FPSCounter/FPSCounter.gd" type="Script" id=1]
+
+[node name="FPSCounter" type="ColorRect"]
+margin_left = -132.0
+margin_top = -275.0
+margin_right = -103.0
+margin_bottom = -244.0
+color = Color( 0.219608, 1, 0, 0.239216 )
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 29.0
+margin_bottom = 31.0
+text = "100
+"
+align = 1
+valign = 1
