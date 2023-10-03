@@ -1,14 +1,19 @@
 extends Node2D
 
+export(NodePath) var camera_path
 export(float) var radius : float = 10
-
 export(PackedScene) var hexagon_scene : PackedScene
 
-var _debug_unit : Node2D
-var _brash_unit
-var _units = {}
+onready var _camera : Camera2D = get_node(camera_path)
 
+var _brush_unit : Node2D
+var _units = {}
 var _brush_color : Color
+
+
+func _ready():
+	_brush_unit = hexagon_scene.instance()
+	add_child(_brush_unit)
 
 
 func _input(event):
@@ -30,16 +35,11 @@ func _input(event):
 		_brush_color = Color.orange
 
 
-func _ready():
-	_debug_unit = hexagon_scene.instance()
-	add_child(_debug_unit)
-
-
-func _physics_process(delta):
-	var mouse_pos = get_viewport().get_mouse_position()
+func _process(delta):
+	var mouse_pos = _camera.get_local_mouse_position()
 	mouse_pos = get_global_mouse_position()
 	var hex_pos = _to_hex_pos(mouse_pos)
-	_debug_unit.global_position = hex_pos
+	_brush_unit.global_position = hex_pos
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		if !_units.has(hex_pos):
 			var hexagon : Polygon2D = hexagon_scene.instance()
