@@ -5,6 +5,7 @@ export(float) var radius : float = 10
 export(PackedScene) var hexagon_scene : PackedScene
 
 onready var _camera : Camera2D = get_node(camera_path)
+onready var _mosaic_root : Node2D = $MosaicRoot
 
 var _brush_unit : Node2D
 var _units = {}
@@ -18,13 +19,14 @@ func _ready():
 
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
-		_save()
+		_save_as_scene()
 	elif Input.is_key_pressed(KEY_L):
 		_load()
 	elif Input.is_key_pressed(KEY_R):
 		_brush_color = Color.red
+		_brush_color = Color.darkred
 	elif Input.is_key_pressed(KEY_G):
-		_brush_color = Color.green
+		_brush_color = Color.darkolivegreen
 	elif Input.is_key_pressed(KEY_B):
 		_brush_color = Color.blue
 	elif Input.is_key_pressed(KEY_Y):
@@ -33,6 +35,8 @@ func _input(event):
 		_brush_color = Color.pink
 	elif Input.is_key_pressed(KEY_O):
 		_brush_color = Color.orange
+	elif Input.is_key_pressed(KEY_W):
+		_brush_color = Color.white
 
 
 func _process(delta):
@@ -42,12 +46,7 @@ func _process(delta):
 	_brush_unit.global_position = hex_pos
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		if !_units.has(hex_pos):
-			var hexagon : Polygon2D = hexagon_scene.instance()
-#			hexagon.color = Color(randf_range(0, 1), randf_range(0, 1), randf_range(0, 1), 1)
-			hexagon.color = _brush_color
-			add_child(hexagon)
-			hexagon.global_position = hex_pos
-			_units[hex_pos] = hexagon
+			create_unit(hex_pos, _brush_color)
 			
 
 func _to_hex_pos(pos : Vector2):
@@ -74,6 +73,15 @@ func _to_hex_pos(pos : Vector2):
 	return nearest_point
 	
 
+func create_unit(position : Vector2, color : Color):
+	var unit = hexagon_scene.instance()
+	_mosaic_root.add_child(unit)
+	unit.owner = _mosaic_root
+	unit.global_position = position
+	unit.color = color
+	_units[position] = unit
+
+
 func _save():
 	var mosaic_units = []
 	for pos in _units:
@@ -90,8 +98,34 @@ func _load():
 		for mosaic_unit in mosaic_units:
 			var pos : Vector2 = mosaic_unit.position
 			var color : Color = mosaic_unit.color
-			var unit : Polygon2D = hexagon_scene.instance()
-			add_child(unit)
-			unit.global_position = pos
-			unit.color = color
-			_units[pos] = unit
+			create_unit(pos, color)
+			
+			
+func _save_as_scene():
+	_save()
+#	# Create the objects.
+#	var node = Node2D.new()
+#	var rigid = RigidBody2D.new()
+#	var collision = CollisionShape2D.new()
+#
+#	# Create the object hierarchy.
+#	rigid.add_child(collision)
+#	node.add_child(rigid)
+#
+#	# Change owner of `rigid`, but not of `collision`.
+#	rigid.owner = node
+#
+#	var scene = PackedScene.new()
+#	# Only `node` and `rigid` are now packed.
+#	var result = scene.pack(node)
+#	if result == OK:
+#		var error = ResourceSaver.save("res://name.scn", scene)  # Or "user://..."
+#		if error != OK:
+#			push_error("An error occurred while saving the scene to disk.")
+#
+	var scene : PackedScene = PackedScene.new()
+	var result = scene.pack(_mosaic_root)
+	if 	result == OK:
+		var error = ResourceSaver.save("res://Scenes/Levels/Level0.tscn", scene)
+		if error != OK:
+			push_error("An error occurred while saving the scene to disk.")

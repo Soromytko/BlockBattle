@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scripts/BlockGenerator.gd" type="Script" id=2]
 [ext_resource path="res://FPSCounter/FPSCounter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/HexagonBlock.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Racket.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Level0.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 325.5 )
@@ -15,7 +14,7 @@ extents = Vector2( 190, 10 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Ball" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 224 )
+position = Vector2( 0, 126 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -67,11 +66,14 @@ scale = Vector2( 190, 5 )
 color = Color( 0.94902, 0.12549, 0.878431, 1 )
 polygon = PoolVector2Array( -1, -1, -1, 1, 1, 1, 1, -1 )
 
-[node name="BlockGenerator" type="Node2D" parent="."]
-script = ExtResource( 2 )
-block_scene = ExtResource( 4 )
-
 [node name="FPSCounter" parent="." instance=ExtResource( 3 )]
+margin_left = 137.0
+margin_top = -209.0
+margin_right = 166.0
+margin_bottom = -178.0
 
 [node name="Racket" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0, 159 )
 camera_path = NodePath("../Camera2D")
+
+[node name="MosaicRoot" parent="." instance=ExtResource( 6 )]

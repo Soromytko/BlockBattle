@@ -3,9 +3,16 @@ class_name Block extends StaticBody2D
 export(float) var health = 1
 export(PackedScene) var particles_scene
 
-func set_color(color : Color):
+export(Color) var color : Color setget set_color, get_color
+func set_color(value : Color):
+	color = value
 	$Polygon2D.color = color
-	
+func get_color(): return color
+
+
+func _ready():
+	$Polygon2D.color = color
+
 
 func take_damage(value : float = 1):
 	health -= value
