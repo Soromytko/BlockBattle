@@ -10,10 +10,7 @@ func get_speed(): return speed
 
 
 func _ready():
-	var x : float = rand_range(-1, 1)
-	var y : float = rand_range(-1, 1)
-	velocity = Vector2(x, y).normalized()
-
+	velocity.y = 1
 
 func _physics_process(delta):
 	var mouse_pos = get_global_mouse_position()

@@ -28,12 +28,18 @@ _global_script_classes=[ {
 "class": "MosaicFileManager",
 "language": "GDScript",
 "path": "res://MosaicEditor/MosaicFileManager.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Racket",
+"language": "GDScript",
+"path": "res://Scripts/Racket.gd"
 } ]
 _global_script_class_icons={
 "Ball": "",
 "Block": "",
 "BlockGenerator": "",
-"MosaicFileManager": ""
+"MosaicFileManager": "",
+"Racket": ""
 }
 
 [application]

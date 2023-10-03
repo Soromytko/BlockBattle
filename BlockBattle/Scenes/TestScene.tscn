@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/BlockGenerator.gd" type="Script" id=2]
 [ext_resource path="res://FPSCounter/FPSCounter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/HexagonBlock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Racket.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 325.5 )
@@ -14,12 +15,13 @@ extents = Vector2( 190, 10 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Ball" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 224 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( -200, 0 )
+position = Vector2( -195, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 1 )
@@ -31,7 +33,7 @@ color = Color( 0.94902, 0.12549, 0.878431, 1 )
 polygon = PoolVector2Array( -1, -1, -1, 1, 1, 1, 1, -1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 200, 0 )
+position = Vector2( 195, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2( 0, -0.5 )
@@ -70,3 +72,6 @@ script = ExtResource( 2 )
 block_scene = ExtResource( 4 )
 
 [node name="FPSCounter" parent="." instance=ExtResource( 3 )]
+
+[node name="Racket" parent="." instance=ExtResource( 5 )]
+camera_path = NodePath("../Camera2D")
