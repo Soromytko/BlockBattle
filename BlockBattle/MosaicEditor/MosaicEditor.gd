@@ -1,22 +1,36 @@
 extends Node2D
 
 export(NodePath) var camera_path
-export(float) var radius : float = 10
+export(float) var hex_radius : float = 10
+	
 export(PackedScene) var hexagon_scene : PackedScene
 
 onready var _camera : Camera2D = get_node(camera_path)
 onready var _mosaic_root : Node2D = $MosaicRoot
 
+var _hex_diameter : float
+var _hex_odd_row_offset : Vector2
 var _brush_unit : Node2D
 var _units = {}
 var _brush_color : Color
 
 
+class CheckData:
+	var x : int
+	var y : int
+	var distance : float
+	func _init(x : int, y : int, distance : float):
+		self.x = x
+		self.y = y
+		self.distance = distance
+
+
 func _ready():
 	_brush_unit = hexagon_scene.instance()
+	_brush_unit.scale = Vector2.ONE * hex_radius / 10
 	add_child(_brush_unit)
-
-
+	
+	
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
 		_save_as_scene()
@@ -42,43 +56,62 @@ func _input(event):
 func _process(delta):
 	var mouse_pos = _camera.get_local_mouse_position()
 	mouse_pos = get_global_mouse_position()
-	var hex_pos = _to_hex_pos(mouse_pos)
+	var hex_pos = _global_pos_to_hex_pos(mouse_pos)
 	_brush_unit.global_position = hex_pos
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		if !_units.has(hex_pos):
 			create_unit(hex_pos, _brush_color)
 			
 
-func _to_hex_pos(pos : Vector2):
-	var h : float = radius * sqrt(3) / 2.0
-	var box_size : Vector2 = Vector2(h * 4, (radius + h / 2) * 2)
-	var box_pos = Vector2(round(pos.x / box_size.x) * box_size.x, round(pos.y / box_size.y) * box_size.y)
-	var half_box_size = box_size / 2
-	var quarter_box_size = half_box_size / 2
-	var points = [
-		box_pos + Vector2(half_box_size.x, 0),
-		box_pos + Vector2(quarter_box_size.x, half_box_size.y),
-		box_pos + Vector2(-quarter_box_size.x, half_box_size.y),
-		box_pos + Vector2(-half_box_size.x, 0),
-		box_pos + Vector2(-quarter_box_size.x, -half_box_size.y),
-		box_pos + Vector2(-quarter_box_size.x, +half_box_size.y),
-	]
-	var dist = pos.distance_to(box_pos)
-	var nearest_point = box_pos
-	for point in points:
-		var cur_dist : float = pos.distance_to(point)
-		if cur_dist < dist:
-			dist = cur_dist
-			nearest_point = point
-	return nearest_point
+
+func _global_pos_to_hex_pos(pos : Vector2):
+	var hex_info = _get_hex_info_in_row_by_global_pos(pos)
+	return hex_info.global_hex_pos
+	return hex_info.ordinal_pos * Vector2(sqrt(3), 3) * hex_radius + hex_info.row_offset
+	
+	
+func _get_ordinal_hex_pos_in_row(pos : Vector2) -> Vector2:
+	var rounded_pos = pos
+	rounded_pos.x += sqrt(3) / 2 * hex_radius * (1 if rounded_pos.x > 0 else -1)
+	rounded_pos.y += hex_radius * (1 if rounded_pos.y > 0 else -1)
+	var x : int = rounded_pos.x / (sqrt(3) * hex_radius)
+	var y : int = rounded_pos.y / (hex_radius * 3)
+	return Vector2(x, y)
+
+
+func _ordinal_pos_to_global_hex_pos(ordinal_pos : Vector2) -> Vector2:
+	return ordinal_pos * Vector2(sqrt(3), 3) * hex_radius
 	
 
+func _get_hex_info_in_row(pos : Vector2, is_even : bool = true, row_offset : Vector2 = Vector2.ZERO) -> Dictionary:
+	var offset_pos = pos - row_offset
+	var ordinal_pos = _get_ordinal_hex_pos_in_row(offset_pos)
+	var hex_pos = _ordinal_pos_to_global_hex_pos(ordinal_pos) + row_offset
+	return {
+		ordinal_pos = ordinal_pos,
+		global_hex_pos = hex_pos,
+		is_even = is_even,
+	}
+	
+func _get_hex_info_in_row_by_global_pos(pos : Vector2) -> Dictionary:
+#	Find the nearest one in the even row
+	var even = _get_hex_info_in_row(pos)
+#	Find the nearest one in the odd row
+	var odd_row_offset = Vector2(sqrt(3) / 2, 1.5) * hex_radius
+	var odd = _get_hex_info_in_row(pos, false, odd_row_offset)
+	
+	var even_dist = even.global_hex_pos.distance_to(pos)
+	var odd_dist = odd.global_hex_pos.distance_to(pos)
+	return even if even_dist < odd_dist else odd
+	
+	
 func create_unit(position : Vector2, color : Color):
 	var unit = hexagon_scene.instance()
 	_mosaic_root.add_child(unit)
 	unit.owner = _mosaic_root
 	unit.global_position = position
 	unit.color = color
+	unit.scale = Vector2.ONE * hex_radius / 10
 	_units[position] = unit
 
 
