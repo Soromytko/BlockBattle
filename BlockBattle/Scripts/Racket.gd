@@ -16,8 +16,7 @@ onready var _camera = get_node(camera_path)
 func _physics_process(delta):
 	var cursor_position : Vector2 = _camera.get_local_mouse_position()
 	var move_delta = cursor_position.x - global_position.x
-	move_local_x(move_delta)
-#	global_position = cursor_position
+	var collision : KinematicCollision2D = move_and_collide(Vector2(move_delta, 0))
 	
 
 #func _on_area_2d_body_entered(body):
