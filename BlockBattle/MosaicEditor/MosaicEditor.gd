@@ -1,7 +1,7 @@
 extends Node2D
 
 export(NodePath) var camera_path
-export(float) var hex_radius : float = 10
+export(float) var hex_radius : float = 5
 	
 export(PackedScene) var hexagon_scene : PackedScene
 
@@ -33,7 +33,7 @@ func _ready():
 	
 func _input(event):
 	if Input.is_key_pressed(KEY_S):
-		_save_as_scene()
+		_save()
 	elif Input.is_key_pressed(KEY_L):
 		_load()
 	elif Input.is_key_pressed(KEY_R):
@@ -121,6 +121,7 @@ func _save():
 		var color : Color = _units[pos].color
 		mosaic_units.append(MosaicFileManager.MosaicUnit.new(pos, color))
 	MosaicFileManager.save_to_file(mosaic_units)
+	MosaicFileManager.save_as_scene(_mosaic_root)
 		
 	
 func _load():
@@ -134,31 +135,3 @@ func _load():
 			create_unit(pos, color)
 			
 			
-func _save_as_scene():
-	_save()
-#	# Create the objects.
-#	var node = Node2D.new()
-#	var rigid = RigidBody2D.new()
-#	var collision = CollisionShape2D.new()
-#
-#	# Create the object hierarchy.
-#	rigid.add_child(collision)
-#	node.add_child(rigid)
-#
-#	# Change owner of `rigid`, but not of `collision`.
-#	rigid.owner = node
-#
-#	var scene = PackedScene.new()
-#	# Only `node` and `rigid` are now packed.
-#	var result = scene.pack(node)
-#	if result == OK:
-#		var error = ResourceSaver.save("res://name.scn", scene)  # Or "user://..."
-#		if error != OK:
-#			push_error("An error occurred while saving the scene to disk.")
-#
-	var scene : PackedScene = PackedScene.new()
-	var result = scene.pack(_mosaic_root)
-	if 	result == OK:
-		var error = ResourceSaver.save("res://Scenes/Levels/Level0.tscn", scene)
-		if error != OK:
-			push_error("An error occurred while saving the scene to disk.")
