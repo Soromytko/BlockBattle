@@ -16,9 +16,13 @@ func _physics_process(delta):
 	var mouse_pos = get_global_mouse_position()
 	var kinematic_collision = move_and_collide(velocity * speed)
 	if kinematic_collision:
-		velocity = velocity.bounce(kinematic_collision.get_normal())
 		var collider = kinematic_collision.get_collider()
-		if collider is Block:
-			var block : Block = collider
-			block.take_damage()
+		if collider is Racket:
+			var racket : Racket = collider
+			velocity = (global_position - racket.global_position).normalized()
+		else:
+			velocity = velocity.bounce(kinematic_collision.get_normal())
+			if  collider is Block:
+				var block : Block = collider
+				block.take_damage()
 
