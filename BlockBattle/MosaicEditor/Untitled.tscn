@@ -1,0 +1,2494 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Block.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/HexagonBlock.tscn" type="PackedScene" id=2]
+
+[node name="MosaicRoot" type="Node2D"]
+
+[node name="HexagonBlock" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@2" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@3" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 25.9808, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@4" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30.3109, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@5" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.9711, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@6" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47.6314, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@7" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 51.9615, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@8" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 56.2916, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@9" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60.6218, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@10" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64.9519, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@11" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60.6218, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@12" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64.9519, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@13" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60.6218, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@14" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 51.9615, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@15" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47.6314, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@16" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.9711, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@17" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30.3109, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@18" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21.6506, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@19" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -135 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@20" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12.9904, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@21" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -135 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@22" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@23" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -135 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@24" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@25" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -135 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@26" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@27" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -135 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@28" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@29" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@30" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@31" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@32" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@33" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -142.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@34" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@35" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@36" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@37" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@38" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@39" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@40" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@41" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@42" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@43" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@44" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@45" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@46" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@47" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@48" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@49" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@50" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@51" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@52" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -134.234, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@53" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@54" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -134.234, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@55" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -142.894, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@56" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -151.554, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@57" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -155.885, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@58" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -160.215, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@59" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -164.545, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@60" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -173.205, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@61" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -177.535, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@62" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -168.875, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@63" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -155.885, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@64" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -147.224, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@65" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -142.894, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@66" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -134.234, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@67" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -151.554, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@68" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -270 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@69" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -270 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@70" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -277.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@71" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -277.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@72" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -277.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@73" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -285 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@74" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -285 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@75" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -292.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@76" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -292.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@77" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -285 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@78" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -277.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@79" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -277.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@80" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -270 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@81" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -270 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@82" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@83" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@84" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@85" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@86" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@87" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@88" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@89" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@90" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@91" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@92" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@93" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@94" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@95" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@96" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@97" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@98" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@99" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@100" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 0, 0, 0, 1 )
+
+[node name="@HexagonBlock@101" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21.6506, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 1, 1 )
+
+[node name="@HexagonBlock@102" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 25.9808, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 1, 1 )
+
+[node name="@HexagonBlock@103" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 1, 1 )
+
+[node name="@HexagonBlock@104" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12.9904, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 1, 1 )
+
+[node name="@HexagonBlock@105" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.641, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@106" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.9711, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@107" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43.3013, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@108" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.9711, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@109" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.641, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@110" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 25.9808, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@111" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21.6506, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@112" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 25.9808, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@113" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30.3109, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@114" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43.3013, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@115" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47.6314, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@116" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 51.9615, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@117" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47.6314, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@118" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30.3109, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@119" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@120" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12.9904, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@121" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@122" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.641, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@123" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43.3013, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@124" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21.6506, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@125" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30.3109, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@126" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 56.2916, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@127" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 51.9615, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@128" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 38.9711, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@129" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 25.9808, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@130" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.641, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@131" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 69.282, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@132" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 73.6122, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@133" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 77.9423, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@134" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 73.6122, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@135" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43.3013, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@136" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47.6314, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@137" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 17.3205, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@138" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@139" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@140" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@141" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@142" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@143" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@144" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@145" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@146" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@147" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21.6506, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@148" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@149" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@150" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@151" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.641, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@152" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12.9904, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@153" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@154" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@155" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@156" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@157" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@158" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@159" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@160" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@161" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@162" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@163" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@164" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@165" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@166" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@167" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@168" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@169" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -150 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@170" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@171" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4.33013, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@172" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@173" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@174" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@175" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@176" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@177" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@178" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8.66025, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@179" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@180" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@181" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@182" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@183" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@184" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@185" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@186" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4.33013, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@187" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8.66025, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@188" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@189" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@190" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@191" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@192" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@193" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@194" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@195" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@196" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@197" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@198" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@199" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@200" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@201" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@202" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@203" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -21.6506, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@204" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@205" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@206" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@207" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@208" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -17.3205, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@209" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34.641, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@210" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12.9904, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@211" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@212" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@213" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@214" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@215" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@216" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@217" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@218" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -30.3109, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@219" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -25.9808, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@220" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@221" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -47.6314, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@222" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@223" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@224" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@225" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@226" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@227" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@228" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@229" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@230" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38.9711, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@231" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@232" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@233" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@234" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@235" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@236" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43.3013, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@237" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@238" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@239" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@240" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@241" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@242" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@243" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@244" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@245" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@246" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@247" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@248" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@249" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@250" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@251" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@252" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@253" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@254" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@255" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@256" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@257" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -240 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@258" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@259" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@260" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -129.904, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@261" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -138.564, -255 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@262" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@263" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -262.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@264" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -270 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@265" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -247.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@266" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@267" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@268" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -225 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@269" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -125.574, -232.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@270" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.244, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@271" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -116.913, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@272" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@273" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@274" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@275" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@276" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@277" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@278" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@279" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@280" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@281" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.6218, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@282" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.2916, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@283" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -51.9615, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@284" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -64.9519, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@285" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@286" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@287" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.6122, -172.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@288" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -69.282, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@289" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@290" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -180 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@291" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@292" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@293" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -77.9423, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@294" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.2724, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@295" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -187.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@296" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@297" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@298" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -103.923, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@299" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -99.5929, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@300" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@301" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -195 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@302" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -95.2628, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@303" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -108.253, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@304" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -112.583, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@305" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -86.6025, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@306" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -217.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@307" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.9327, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@308" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -210 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@309" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12.9904, -202.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@310" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 56.2916, -157.5 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
+
+[node name="@HexagonBlock@311" type="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 86.6025, -165 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+health = 1
+particles_scene = null
+color = Color( 1, 1, 0, 1 )
