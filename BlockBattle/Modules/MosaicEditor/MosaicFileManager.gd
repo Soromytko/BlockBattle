@@ -41,7 +41,7 @@ static func load_from_file(path : String = "res://mosaic_editor_scene.mes"):
 	return units
 	
 	
-static func save_as_scene(root : Node2D, path : String = "res://MosaicEditor/Untitled.tscn"):
+static func save_as_scene(root : Node2D, path : String = "res://Modules/MosaicEditor/Untitled.tscn"):
 	var scene : PackedScene = PackedScene.new()
 	var result = scene.pack(root)
 	if 	result == OK:

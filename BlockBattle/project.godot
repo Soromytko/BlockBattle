@@ -27,7 +27,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "MosaicFileManager",
 "language": "GDScript",
-"path": "res://MosaicEditor/MosaicFileManager.gd"
+"path": "res://Modules/MosaicEditor/MosaicFileManager.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Racket",
