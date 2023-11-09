@@ -25,6 +25,7 @@ func kill():
 
 
 func _die():
+	return
 	queue_free()
 	if not particles_scene:
 		return

@@ -33,13 +33,19 @@ _global_script_classes=[ {
 "class": "Racket",
 "language": "GDScript",
 "path": "res://Scripts/Racket.gd"
+}, {
+"base": "Node2D",
+"class": "SpringBody",
+"language": "GDScript",
+"path": "res://Modules/SpringBlock/Scripts/SpringBody.gd"
 } ]
 _global_script_class_icons={
 "Ball": "",
 "Block": "",
 "BlockGenerator": "",
 "MosaicFileManager": "",
-"Racket": ""
+"Racket": "",
+"SpringBody": ""
 }
 
 [application]
