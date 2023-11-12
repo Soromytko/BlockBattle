@@ -1,18 +1,8 @@
-class_name Block extends StaticBody2D
+class_name Block extends MosaicUnit
+tool
 
 export(float) var health = 1
 export(PackedScene) var particles_scene
-
-export(Color) var color : Color setget set_color, get_color
-func set_color(value : Color):
-	color = value
-#	$Polygon2D.color = color
-	$Sprite.modulate = color
-func get_color(): return color
-
-
-func _ready():
-	set_color(color)
 
 
 func take_damage(value : float = 1):

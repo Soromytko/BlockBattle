@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Modules/SpringBlock/Scripts/SpringBody.gd" type="Script" id=1]
+[ext_resource path="res://Modules/MosaicEditor/Scenes/MosaicUnit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Block.gd" type="Script" id=3]
+
+[node name="Block" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+color = Color( 0.94902, 0.94902, 0.94902, 1 )
+health = 1.0
+particles_scene = null
+
+[node name="Sprite" parent="." index="1"]
+modulate = Color( 0.94902, 0.94902, 0.94902, 1 )
+
+[node name="SpringBody" type="Node2D" parent="." index="2"]
+script = ExtResource( 1 )
+body_path = NodePath("../Sprite")
+stiffness = 2.0

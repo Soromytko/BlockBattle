@@ -14,7 +14,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Ball.gd"
 }, {
-"base": "StaticBody2D",
+"base": "MosaicUnit",
 "class": "Block",
 "language": "GDScript",
 "path": "res://Scripts/Block.gd"
@@ -27,7 +27,22 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "MosaicFileManager",
 "language": "GDScript",
-"path": "res://Modules/MosaicEditor/MosaicFileManager.gd"
+"path": "res://Modules/MosaicEditor/Scripts/MosaicFileManager.gd"
+}, {
+"base": "Node2D",
+"class": "MosaicSandbox",
+"language": "GDScript",
+"path": "res://Modules/MosaicEditor/Scripts/MosaicSandbox.gd"
+}, {
+"base": "Reference",
+"class": "MosaicSandboxGrid",
+"language": "GDScript",
+"path": "res://Modules/MosaicEditor/Scripts/MosaicSandboxGrid.gd"
+}, {
+"base": "StaticBody2D",
+"class": "MosaicUnit",
+"language": "GDScript",
+"path": "res://Modules/MosaicEditor/Scripts/MosaicUnit.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Racket",
@@ -44,6 +59,9 @@ _global_script_class_icons={
 "Block": "",
 "BlockGenerator": "",
 "MosaicFileManager": "",
+"MosaicSandbox": "",
+"MosaicSandboxGrid": "",
+"MosaicUnit": "",
 "Racket": "",
 "SpringBody": ""
 }
