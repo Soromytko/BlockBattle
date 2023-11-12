@@ -69,7 +69,7 @@ polygon = PoolVector2Array( -1, -1, -1, 1, 1, 1, 1, -1 )
 position = Vector2( 0, 575 )
 camera_path = NodePath("../Camera2D")
 
-[node name="MosaicRoot" parent="." instance=ExtResource( 6 )]
+[node name="MosaicSandbox" parent="." instance=ExtResource( 6 )]
 
 [node name="Control" type="Control" parent="."]
 margin_right = 40.0
