@@ -14,7 +14,8 @@ extents = Vector2( 454.5, 10 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Ball" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 126 )
+position = Vector2( -16, 9 )
+mosaic_sandbox_path = NodePath("../MosaicSandbox")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

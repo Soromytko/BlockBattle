@@ -1,22 +1,25 @@
-class_name Block extends MosaicUnit
+class_name Block extends PhysicsMosaicUnit
 tool
 
 export(float) var health = 1
 export(PackedScene) var particles_scene
 
-
 func take_damage(value : float = 1):
 	health -= value
 	if health <= 0:
 		_die()
-	
+		
+		
 func kill():
 	take_damage(health)	
 
 
 func _die():
 	return
-	queue_free()
+#	TODO: Dad design 
+	var sandbox : MosaicSandbox = get_parent()
+	sandbox.delete_unit_by_global_position(global_position)
+	
 	if not particles_scene:
 		return
 	var particles = particles_scene.instance()

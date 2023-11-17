@@ -1,1642 +1,825 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scripts/Block.gd" type="Script" id=1]
-[ext_resource path="res://Modules/MosaicEditor/Scripts/MosaicSandbox.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/PhysicsMosaicSandbox.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Prefabs/Block.tscn" type="PackedScene" id=3]
 
 [node name="MosaicSandbox" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 unit_scene = ExtResource( 3 )
 unit_radius = 20.0
 
-[node name="Block" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="Block" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@2" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@3" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@4" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@5" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@6" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@7" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@8" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@8" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@9" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@9" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@10" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@10" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@11" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@12" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@12" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@13" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@13" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@14" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@14" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@15" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@15" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@16" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@16" parent="." instance=ExtResource( 3 )]
 position = Vector2( 225.167, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@17" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@17" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@18" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@18" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -360 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@19" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@19" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@20" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@20" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -300 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@21" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@21" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -330 )
-script = ExtResource( 1 )
 color = Color( 1, 1, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@22" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@22" parent="." instance=ExtResource( 3 )]
 position = Vector2( 225.167, -210 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@23" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@23" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@24" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@24" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@25" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@25" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -210 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@26" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@26" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@27" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@27" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@28" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@28" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@29" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@29" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@30" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@30" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@31" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@31" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -180 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@32" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@32" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -210 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@33" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@33" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -210 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@34" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@34" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -240 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@35" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@35" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -210 )
-script = ExtResource( 1 )
 color = Color( 0.545098, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@36" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@36" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@37" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@37" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@38" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@38" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@39" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@39" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@40" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@40" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@41" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@41" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@42" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@42" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@43" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@43" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@44" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@44" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@45" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@45" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@46" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@46" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@47" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@47" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@48" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@48" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@49" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@49" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@50" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@50" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@51" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@51" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@52" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@52" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@53" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@53" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@54" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@54" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@55" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@55" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@56" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@56" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@57" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@57" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@58" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@58" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@59" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@59" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@60" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@60" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@61" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@61" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@62" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@62" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@63" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@63" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@64" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@64" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@65" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@65" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@66" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@66" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@67" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@67" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@68" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@68" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@69" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@69" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@70" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@70" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@71" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@71" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@72" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@72" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@73" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@73" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@74" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@74" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@75" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@75" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@76" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@76" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@77" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@77" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@78" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@78" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@79" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@79" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@80" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@80" parent="." instance=ExtResource( 3 )]
 position = Vector2( 225.167, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@81" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@81" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@82" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@82" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@83" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@83" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -450 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@84" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@84" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -450 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@85" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@85" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@86" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@86" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -450 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@87" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@87" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@88" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@88" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@89" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@89" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@90" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@90" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -450 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@91" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@91" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@92" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@92" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@93" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@93" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@94" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@94" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -450 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@95" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@95" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@96" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@96" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@97" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@97" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@98" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@98" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@99" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@99" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@100" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@100" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@101" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@101" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@102" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@102" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@103" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@103" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@104" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@104" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@105" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@105" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@106" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@106" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@107" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@107" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@108" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@108" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@109" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@109" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@110" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@110" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@111" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@111" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@112" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@112" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@113" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@113" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@114" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@114" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@115" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@115" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@116" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@116" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@117" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@117" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@118" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@118" parent="." instance=ExtResource( 3 )]
 position = Vector2( 207.846, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@119" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@119" parent="." instance=ExtResource( 3 )]
 position = Vector2( -173.205, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@120" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@120" parent="." instance=ExtResource( 3 )]
 position = Vector2( -207.846, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@121" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@121" parent="." instance=ExtResource( 3 )]
 position = Vector2( -225.167, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@122" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@122" parent="." instance=ExtResource( 3 )]
 position = Vector2( -242.487, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@123" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@123" parent="." instance=ExtResource( 3 )]
 position = Vector2( -277.128, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@124" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@124" parent="." instance=ExtResource( 3 )]
 position = Vector2( -311.769, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@125" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@125" parent="." instance=ExtResource( 3 )]
 position = Vector2( -294.449, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@126" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@126" parent="." instance=ExtResource( 3 )]
 position = Vector2( -329.09, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@127" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@127" parent="." instance=ExtResource( 3 )]
 position = Vector2( -311.769, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@128" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@128" parent="." instance=ExtResource( 3 )]
 position = Vector2( -329.09, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@129" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@129" parent="." instance=ExtResource( 3 )]
 position = Vector2( -311.769, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@130" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@130" parent="." instance=ExtResource( 3 )]
 position = Vector2( -329.09, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@131" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@131" parent="." instance=ExtResource( 3 )]
 position = Vector2( -363.731, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@132" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@132" parent="." instance=ExtResource( 3 )]
 position = Vector2( -346.41, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@133" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@133" parent="." instance=ExtResource( 3 )]
 position = Vector2( -381.051, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@134" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@134" parent="." instance=ExtResource( 3 )]
 position = Vector2( -398.372, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@135" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@135" parent="." instance=ExtResource( 3 )]
 position = Vector2( 225.167, -90 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@136" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@136" parent="." instance=ExtResource( 3 )]
 position = Vector2( 259.808, -90 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@137" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@137" parent="." instance=ExtResource( 3 )]
 position = Vector2( 294.449, -90 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@138" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@138" parent="." instance=ExtResource( 3 )]
 position = Vector2( 329.09, -90 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@139" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@139" parent="." instance=ExtResource( 3 )]
 position = Vector2( 363.731, -90 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@140" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@140" parent="." instance=ExtResource( 3 )]
 position = Vector2( 381.051, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@141" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@141" parent="." instance=ExtResource( 3 )]
 position = Vector2( 415.692, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@142" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@142" parent="." instance=ExtResource( 3 )]
 position = Vector2( 433.013, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@143" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@143" parent="." instance=ExtResource( 3 )]
 position = Vector2( 450.333, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@144" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@144" parent="." instance=ExtResource( 3 )]
 position = Vector2( 433.013, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@145" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@145" parent="." instance=ExtResource( 3 )]
 position = Vector2( 450.333, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@146" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@146" parent="." instance=ExtResource( 3 )]
 position = Vector2( 433.013, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@147" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@147" parent="." instance=ExtResource( 3 )]
 position = Vector2( 450.333, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@148" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@148" parent="." instance=ExtResource( 3 )]
 position = Vector2( 433.013, -330 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@149" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@149" parent="." instance=ExtResource( 3 )]
 position = Vector2( 450.333, -360 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@150" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@150" parent="." instance=ExtResource( 3 )]
 position = Vector2( 433.013, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@151" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@151" parent="." instance=ExtResource( 3 )]
 position = Vector2( 467.654, -390 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@152" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@152" parent="." instance=ExtResource( 3 )]
 position = Vector2( 450.333, -420 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@153" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@153" parent="." instance=ExtResource( 3 )]
 position = Vector2( -173.205, -300 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@154" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@154" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -270 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@155" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@155" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@156" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@156" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@157" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@157" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@158" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@158" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@159" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@159" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138.564, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@160" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@160" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@161" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@161" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@162" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@162" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@163" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@163" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34.641, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@164" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@164" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@165" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@165" parent="." instance=ExtResource( 3 )]
 position = Vector2( 34.641, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@166" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@166" parent="." instance=ExtResource( 3 )]
 position = Vector2( 69.282, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@167" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@167" parent="." instance=ExtResource( 3 )]
 position = Vector2( 103.923, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@168" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@168" parent="." instance=ExtResource( 3 )]
 position = Vector2( 138.564, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@169" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@169" parent="." instance=ExtResource( 3 )]
 position = Vector2( 173.205, -120 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@170" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@170" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@171" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@171" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@172" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@172" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@173" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@173" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@174" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@174" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@175" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@175" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@176" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@176" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@177" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@177" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@178" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@178" parent="." instance=ExtResource( 3 )]
 position = Vector2( -69.282, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@179" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@179" parent="." instance=ExtResource( 3 )]
 position = Vector2( -103.923, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@180" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@180" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -210 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@181" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@181" parent="." instance=ExtResource( 3 )]
 position = Vector2( -173.205, -240 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@182" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@182" parent="." instance=ExtResource( 3 )]
 position = Vector2( -190.526, -270 )
-script = ExtResource( 1 )
 color = Color( 0.337255, 0.423529, 0.192157, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@183" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@183" parent="." instance=ExtResource( 3 )]
 position = Vector2( -173.205, -180 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@184" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@184" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -150 )
-script = ExtResource( 1 )
 color = Color( 0.333333, 0.419608, 0.184314, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@185" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@185" parent="." instance=ExtResource( 3 )]
 position = Vector2( -190.526, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@186" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@186" parent="." instance=ExtResource( 3 )]
 position = Vector2( -173.205, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@187" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@187" parent="." instance=ExtResource( 3 )]
 position = Vector2( -207.846, -60 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@188" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@188" parent="." instance=ExtResource( 3 )]
 position = Vector2( -225.167, -90 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@189" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@189" parent="." instance=ExtResource( 3 )]
 position = Vector2( 225.167, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@190" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@190" parent="." instance=ExtResource( 3 )]
 position = Vector2( 190.526, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@191" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@191" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@192" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@192" parent="." instance=ExtResource( 3 )]
 position = Vector2( 121.244, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@193" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@193" parent="." instance=ExtResource( 3 )]
 position = Vector2( 86.6025, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@194" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@194" parent="." instance=ExtResource( 3 )]
 position = Vector2( 51.9615, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@195" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@195" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@196" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@196" parent="." instance=ExtResource( 3 )]
 position = Vector2( -17.3205, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@197" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@197" parent="." instance=ExtResource( 3 )]
 position = Vector2( -51.9615, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@198" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@198" parent="." instance=ExtResource( 3 )]
 position = Vector2( -86.6025, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@199" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@199" parent="." instance=ExtResource( 3 )]
 position = Vector2( -121.244, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@200" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@200" parent="." instance=ExtResource( 3 )]
 position = Vector2( -155.885, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@201" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@201" parent="." instance=ExtResource( 3 )]
 position = Vector2( -190.526, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@202" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@202" parent="." instance=ExtResource( 3 )]
 position = Vector2( -225.167, -30 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 1, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@203" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@203" parent="." instance=ExtResource( 3 )]
 position = Vector2( 17.3205, -330 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
 
-[node name="@Block@204" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="@Block@204" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.885, -330 )
-script = ExtResource( 1 )
 color = Color( 0, 0, 0, 1 )
-radius = 20.0
-health = 1.0
-particles_scene = null
