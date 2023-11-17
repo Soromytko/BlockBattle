@@ -21,15 +21,7 @@ func get_unit_radius() -> float:
 
 
 func _ready():
-	var cell_size : Vector2 = Vector2(sqrt(3), 3) * unit_radius
-	var odd_grid_offset : Vector2 = Vector2(sqrt(3) / 2, 1.5) * unit_radius
-	_even_grid = MosaicSandboxGrid.new(cell_size)
-	_odd_grid = MosaicSandboxGrid.new(cell_size, odd_grid_offset)
-	for child in get_children():
-		if child is MosaicUnit:
-			var unit_index = get_unit_index(child.global_position)
-			if !_units.has(unit_index):
-				_units[unit_index] = child
+	_init_sandbox()
 	
 	
 func create_unit_by_global_position(position : Vector2) -> MosaicUnit:
@@ -92,4 +84,13 @@ func unit_index_to_global_position(unit_index : Vector2) -> Vector2:
 	return grid.cell_index_to_global_position(Vector2(x, y / 2))
 	
 	
-	
+func _init_sandbox():
+	var cell_size : Vector2 = Vector2(sqrt(3), 3) * unit_radius
+	var odd_grid_offset : Vector2 = Vector2(sqrt(3) / 2, 1.5) * unit_radius
+	_even_grid = MosaicSandboxGrid.new(cell_size)
+	_odd_grid = MosaicSandboxGrid.new(cell_size, odd_grid_offset)
+	for child in get_children():
+		if child is MosaicUnit:
+			var unit_index = get_unit_index(child.global_position)
+			if !_units.has(unit_index):
+				_units[unit_index] = child
